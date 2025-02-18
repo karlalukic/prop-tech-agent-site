@@ -6,58 +6,134 @@
     <title>Prop Tech Agent</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f8f9fa; /* Light background */
+            color: #343a40; /* Darker text color */
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 20px; /* Add padding to container */
         }
-        header {
-            background: #0073e6;
+
+        nav {
+            background-color: #007bff; /* Blue navbar */
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center the navigation items */
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px; /* Rounded corners for nav items */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        header {
+            background: #007bff; /* Blue header */
+            color: white;
+            padding: 50px 0; /* Increased header padding */
             text-align: center;
         }
+
+        header h1 {
+            font-size: 2.5em; /* Larger heading */
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
         section {
-            padding: 20px;
+            padding: 30px; /* Increased section padding */
             background: white;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
         }
+
+        h2 {
+            color: #007bff; /* Blue headings */
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc; /* Use bullet points */
+            padding-left: 20px;
+        }
+
         .cta {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px;
+            display: inline-block; /* Make buttons inline */
+            width: auto; /* Adjust width to content */
+            margin: 10px; /* Add margin around buttons */
+            padding: 12px 20px; /* Increased button padding */
             text-align: center;
-            background: #0073e6;
+            background: #007bff; /* Blue buttons */
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
+
         .cta:hover {
-            background: #005bb5;
+            background: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40; /* Dark footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <h1>Prop Tech Agent</h1>
         <p>Helping You Find, Set Up, and Succeed with Property Management Software</p>
     </header>
-    
+
     <div class="container">
         <section>
             <h2>The Right Software. The Right Support.</h2>
             <p>At <strong>Prop Tech Agent</strong>, we simplify property management software selection, onboarding, training, and support.</p>
         </section>
-        
+
         <section>
             <h2>Our Services</h2>
             <ul>
@@ -66,7 +142,7 @@
                 <li><strong>Ongoing Support & Advocacy:</strong> Helping with troubleshooting and software feedback.</li>
             </ul>
         </section>
-        
+
         <section>
             <h2>Why Choose Us?</h2>
             <ul>
@@ -75,7 +151,7 @@
                 <li>End-to-end support throughout your journey.</li>
             </ul>
         </section>
-        
+
         <section>
             <h2>Get Started Today</h2>
             <p>Ready to optimize your property management software experience?</p>
@@ -83,5 +159,10 @@
             <a href="#" class="cta">Contact Us</a>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2023 Prop Tech Agent</p>
+    </footer>
+
 </body>
 </html>
